@@ -9,7 +9,7 @@ public class SimpleCarController : MonoBehaviour
 	private float m_horizontalInput;
 	private float m_verticalInput;
 	private float m_steeringAngle;
-	private Rigidbody rigidbody;
+	private new Rigidbody rigidbody;
 	public float KPH;
 
 	public Text speedLimit;
@@ -116,7 +116,7 @@ public class SimpleCarController : MonoBehaviour
 	{
 		if (KPH > 40)
 		{
-			speedLimit.text = "Speed Limit Exceeded!";
+			speedLimit.text = "You are exceeding the speed limit!";
 			Debug.Log(speedLimit);
 		} else
 		{
